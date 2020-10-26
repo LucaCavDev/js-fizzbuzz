@@ -62,20 +62,21 @@
 
 for (var i = 1; i <= 100; i++) {
   if ((i % 3 == 0) && (i % 5 == 0)){
-    document.getElementById("lista").innerHTML = "FizzBuzz";
     console.log("FizzBuzz");
+    document.getElementById('lista').innerHTML += '<li>' + 'FizzBuzz' + '</li>';
 
   }
   else if ( i % 3 == 0 ) {
     console.log("Fizz");
-    document.getElementById("lista").innerHTML = "Fizz";
+    document.getElementById('lista').innerHTML += '<li>' + 'Fizz' + '</li>';
   }
   else if ( i % 5 == 0 ) {
     console.log("Buzz");
-    document.getElementById("lista").innerHTML = "Buzz";
+    document.getElementById('lista').innerHTML += '<li>' + 'Buzz' + '</li>';
+
   }
   else {
     console.log(i);
-    document.getElementById("lista").innerHTML = i;
+    document.getElementById('lista').innerHTML += '<li>' + i + '</li>';
   }
 }

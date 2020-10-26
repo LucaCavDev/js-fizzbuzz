@@ -2,12 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: pink;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 
 #lista {
-  min-width: 600px;
-  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+ul li {
+  width: 100px;
+  height: 100px;
+  border: solid 5px gold;
   background-color: red;
-  color: black;
+  list-style: none;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
